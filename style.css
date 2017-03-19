@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+
+body {
+    background: #fbf7f5 url("img/bg.jpg") repeat;
+    font: 14px/22px Arial;
+    color:#444;
+}
+
+a {
+    color: #0083df;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font: 26px/26px Arial;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font: 22px/22px Arial;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: black;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+#wrap {
+    min-width: 900px;
+    min-height: 100%;
+    position: relative;
+
+}
+/*шапка*/
+#header {
+    height: 148px;
+    background: white url("img/bg-header.jpg") left top no-repeat;
+
+}
+
+#header .logo{
+    margin-top: 51px;
+    float: left;
+}
+
+#header .contacts{
+    margin-top: 25px;
+    float: right;
+    text-align: right;
+}
+
+#header .contacts p{
+    font: bold 18px/14px Arial;
+    color: black;
+}
+
+#header .contacts p .green {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#header .contacts p .grey {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.green{
+    color: #1d8b15;
+}
+
+.grey{
+    color: #666;
+}
+/*Навигация*/
+
+#navigation {
+    height: 43px;
+    background: transparent url(img/bg-navigation.png) repeat-x;
+    clear: both;
+}
+#navigation>ul{
+    height: 40px;
+}
+
+#navigation>ul>li{
+    float: left;
+    border-right: 1px solid #444;
+    list-style-type: none;
+    position: relative;
+}
+
+#navigation>ul>li>a{
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    line-height: 14px;
+    padding:13px 23px;
+    border-right: 1px solid #333;
+}
+
+#navigation>ul>li>a:hover,
+#navigation>ul>li>a.active {
+    background-color: #333;
+    color: #77e070;
+}
+#navigation>ul>li:first-child>a {
+    padding-left: 29px;
+}
+/*Выпадающее меню*/
+#navigation>ul>li>ul{
+    width: 200px;
+    background-color: #333;
+    border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    position: absolute;
+    top:40px;
+    overflow: hidden;
+    display: none;
+}
+#navigation>ul>li:hover>ul{
+    display: block;
+}
+
+
+#navigation>ul>li>ul>li{
+    list-style-type: none;
+}
+
+#navigation>ul>li>ul>li>a{
+    display: block;
+    font-size:12px;
+    color: #eee;
+    padding: 10px 23px;
+    line-height: 12px;
+    border-top: 1px solid #333;
+    text-decoration: none;
+}
+
+#navigation>ul>li>ul>li>a:hover{
+    background-color: #222;
+
+}
+
+
+/*контент*/
+#content {
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+#left-column{
+    width: 20%;
+    float: left;
+    overflow: hidden;
+}
+
+#maine{
+    overflow: hidden;
+}
+
+#footer{
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.content {
+    padding: 0 29px;
+    clear: both;
+    margin-top: 30px;
+}
